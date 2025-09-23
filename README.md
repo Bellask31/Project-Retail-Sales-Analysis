@@ -139,8 +139,20 @@ Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beb
 
 **A. Produk apa yang paling laku & menyumbang pemasukan paling besar?**  
 **Tujuan:** Mengetahui produk dengan kuantitas terjual terbanyak dan produk yang menyumbang revenue terbesar.  
-![Visualisasi Total Penjualan Per Produk](https://drive.google.com/uc?id=1o20Bourql0NIpAuhg0tAhmRT7fT4giNJ)
+![Visualisasi Total Penjualan Per Produk](https://drive.google.com/uc?id=1b6HVgp_8XjEH4G7D9i3wx8gzpwory9qW)  
+**Deskripsi:**
+- Clothing: kuantitas terjual tertinggi (894 unit) dengan total revenue Rp155.580 → rata-rata Rp174,03 per unit.
+- Electronics: kuantitas 849 unit dengan total revenue tertinggi Rp156.905 → rata-rata Rp184,81 per unit.
+- Beauty: kuantitas paling rendah (771 unit) dengan revenue Rp143.515 → rata-rata Rp186,14 per unit.  
 
+**Insight:**
+- Dari sisi kuantitas, clothing menjadi produk yang paling laku sehingga clothing berperan sebagai volume driver yang menjaga traffic penjualan.
+- Dari sisi total revenue, electronics unggul tipis dibandingkan clothing sehingga electronics menjadi revenue driver karena menghasilkan pendapatan total terbesar.
+- Dari sisi nilai rata-rata per unit, Beauty justru tertinggi, walaupun kuantitas terjualnya paling sedikit sehingga beauty adalah margin driver karena tiap unitnya paling bernilai, namun membutuhkan strategi pemasaran lebih kuat agar penjualannya meningkat
+
+Clothing menjadi produk yang paling laku. Disusul oleh produk Electronics, sementara Beauty berada di urutan terakhir. Namun, jika dilihat dari total revenue, justru Electronics menyumbang pemasukan terbesar, yaitu sekitar 156.905, sedikit lebih tinggi dibandingkan Clothing yang mencapai 155.580. Sementara itu, Beauty tertinggal jauh dengan total revenue 143.515. Hal ini menunjukkan bahwa meskipun jumlah penjualan Electronics lebih sedikit daripada Clothing, harga per unit produk elektronik jauh lebih tinggi, sehingga mampu mendongkrak total revenue.
+
+Secara sederhana, Clothing unggul dari sisi volume penjualan, sedangkan Electronics unggul dari sisi nilai revenue. Produk Beauty berada di posisi terlemah karena kalah baik dari sisi jumlah unit terjual maupun kontribusi revenue.
 
 **B. Bagaimana transaksi tiap bulannya? Apakah ada pola tertentu, seperti saat liburan?**
 **C. Pria atau wanita yang dominan berbelanja? Produk apa saja yang dominan banyak dibeli pria dan wanita? Pria atau wanita yang dominan lebih banyak mengeluarkan uang?**
