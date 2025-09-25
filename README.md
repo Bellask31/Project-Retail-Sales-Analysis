@@ -1,7 +1,7 @@
 # Retail Sales Data Analysis
 Proyek ini bertujuan untuk menganalisis data penjualan retail menggunakan kombinasi SQL dan Python. Langkah-langkah yang dilakukan meliputi data cleaning, data preparation, exploratory data analysis (EDA), hingga visualisasi untuk menemukan insight dari dataset.
 ## Dataset
-- Sumber : Retail Sales Dataset
+- Sumber : Retail Sales Dataset (https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset?)
 - Jumlah data : 1.000 entri
 - Variabel utama : Transaction_ID, Transaction_Date, Customer_ID, Gender, Age, Product_Category, Quantity, Price_perUnit, Total_Amount
 ## Tools & Teknologi
