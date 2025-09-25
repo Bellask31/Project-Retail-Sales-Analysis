@@ -141,21 +141,44 @@ Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beb
 **Tujuan:** Mengetahui produk dengan kuantitas terjual terbanyak dan produk yang menyumbang revenue terbesar.  
 ![Visualisasi Total Penjualan Per Produk](https://drive.google.com/uc?id=1b6HVgp_8XjEH4G7D9i3wx8gzpwory9qW)  
 **Deskripsi:**
-- Clothing: kuantitas terjual tertinggi (894 unit) dengan total revenue Rp155.580 → rata-rata Rp174,03 per unit.
-- Electronics: kuantitas 849 unit dengan total revenue tertinggi Rp156.905 → rata-rata Rp184,81 per unit.
-- Beauty: kuantitas paling rendah (771 unit) dengan revenue Rp143.515 → rata-rata Rp186,14 per unit.  
+- Clothing: kuantitas terjual tertinggi (894 unit) dengan total revenue 155.580 → rata-rata harga per unit 174,03.
+- Electronics: kuantitas 849 unit dengan total revenue tertinggi 156.905 → rata-rata harga per unit 184,81.
+- Beauty: kuantitas paling rendah (771 unit) dengan revenue 143.515 → rata-rata harga per unit 186,14.  
 
 **Insight:**
-- Dari sisi kuantitas, clothing menjadi produk yang paling laku sehingga clothing berperan sebagai volume driver yang menjaga traffic penjualan.
-- Dari sisi total revenue, electronics unggul tipis dibandingkan clothing sehingga electronics menjadi revenue driver karena menghasilkan pendapatan total terbesar.
-- Dari sisi nilai rata-rata per unit, Beauty justru tertinggi, walaupun kuantitas terjualnya paling sedikit sehingga beauty adalah margin driver karena tiap unitnya paling bernilai, namun membutuhkan strategi pemasaran lebih kuat agar penjualannya meningkat
+- Dari sisi volume penjualan, clothing merupakan produk yang paling diminati konsumen terlebih karena rata-rata harga per unitnya paling kecil diantara dua item lainnya.
+- Akan tetapi, dari segi kontribusi pemasukan, elektronics unggul tipis meskipun jumlah unit yang terjual lebih sedikit dibandingkan dengan clothing. Ini menunjukkan bahwa harga rata-rata per unit elektronics lebih tinggi dan lebih menguntungkan dibandingkan dengan clothing.
+- Item beauty berada di posisi berbeda karena jumlah penjualan paling sedikit dan total revenue terendah. Meskipun demikian, rata-rata harga per unitnya justru paling tinggi. Hal ini mengindikasikan bahwa meski produk Beauty belum populer secara kuantitas, margin keuntungan per unitnya berpotensi lebih besar.
 
-Clothing menjadi produk yang paling laku. Disusul oleh produk Electronics, sementara Beauty berada di urutan terakhir. Namun, jika dilihat dari total revenue, justru Electronics menyumbang pemasukan terbesar, yaitu sekitar 156.905, sedikit lebih tinggi dibandingkan Clothing yang mencapai 155.580. Sementara itu, Beauty tertinggal jauh dengan total revenue 143.515. Hal ini menunjukkan bahwa meskipun jumlah penjualan Electronics lebih sedikit daripada Clothing, harga per unit produk elektronik jauh lebih tinggi, sehingga mampu mendongkrak total revenue.
+**B. Bagaimana transaksi tiap bulannya? Apakah ada pola tertentu, seperti saat liburan?**  
+**Tujuan:** Menganalisis grafik frekuensi transaksi dan total revenue, untuk mendeteksi adanya pola musiman.  
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1hu01OGsME06ECJnJpK4TQ4I-8XA3oJbt" alt="Frekuensi Transaksi vs Pendapatan Bulanan" width="45%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1TqHNlzHZOaloSffRDZczRpc_ENhZAJFn" alt="Produk Terjual per Kategori Bulanan" width="45%"/>
+</p>  
 
-Secara sederhana, Clothing unggul dari sisi volume penjualan, sedangkan Electronics unggul dari sisi nilai revenue. Produk Beauty berada di posisi terlemah karena kalah baik dari sisi jumlah unit terjual maupun kontribusi revenue.
+**Deskripsi:**  
+- Data menunjukkan frekuensi transaksi dan total pendapatan bulanan sepanjang 2023. Terlihat adanya fluktuasi baik dari sisi jumlah transaksi maupun revenue.  
+- Lonjakan signifikan terjadi pada bulan Mei (105 transaksi, revenue 53.150), Oktober (96 transaksi, revenue 46.580), dan Desember (91 transaksi, revenue 44.690). Sebaliknya, penurunan tajam juga terjadi di Maret (73 transaksi, revenue 28.990) dan September (65 transaksi, revenue 23.620).  
+- Pola item yang terjual tiap bulannya tampak konsisten di seluruh kategori produk, hanya saja dominasi kategori berbeda setiap bulannya.  
+- Secara umum, semakin banyak transaksi maka revenue ikut naik. Akan tetapi, nilai produk yang terjual juga memiliki peran penting. Contohnya, bulan Desember jumlah transaksi lebih sedikit (91) dibandingkan dengan bulan Agustus (94), tetapi revenue bulan Desember lebih tinggi dibandingkan Agustus karena lebih banyak produk dengan harga mahal (seperti electronics) yang terjual dibulan tersebut.
 
-**B. Bagaimana transaksi tiap bulannya? Apakah ada pola tertentu, seperti saat liburan?**
-**C. Pria atau wanita yang dominan berbelanja? Produk apa saja yang dominan banyak dibeli pria dan wanita? Pria atau wanita yang dominan lebih banyak mengeluarkan uang?**
+**Insight:**
+- Terdapat indikasi kuat bahwa lonjakan transaksi cenderung bertepatan di bulan dengan event besar, seperti promo mid year atau diskon awal musim dibulan Mei, "autumn sale" atau mid-quarter campaign pada bulan Oktober, dan promo natal dan tahun baru dibulan Desember.
+- Clothing sering menjadi penyumbang volume terbesar di awal tahun (, electronics mendominasi di pertengahan hingga akhir tahun (produk bernilai tinggi), sedangkan beauty lebih stabil namun tidak sekuat dua kategori lainnya.  
+- Hubungan antara banyak transaksi dan revenue tidak selalu berbanding lurus. Ada bulan dengan transaksi tinggi namun revenue tidak naik secara drastis karena item yang terjual lebih banyak produk murah dan sebaliknya. Jadi, revenue ini dipengaruhi oleh dua hal : banyaknya transaksi dan nilai rata-rata pertransaksi.
+
+**C. Pria atau wanita yang dominan berbelanja? Produk apa saja yang dominan banyak dibeli pria dan wanita? Pria atau wanita yang dominan lebih banyak mengeluarkan uang?**  
+**Tujuan:** Memahami perbedaan perilaku belanja antara pria dan wanita yang hasilnya bisa digunakan untuk menyusun strategi pemasaran yang lebih tepat sasaran sesuai dengan karakteristik konsumen.  
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1iU4av95lfXOYXft3XQsB1euAfR-eUofN" alt="Frekuensi Transaksi vs Pendapatan Bulanan" width="45%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1jZ3SIrljEfAf5uZG0WpcTXyE5HZbtP-q" alt="Produk Terjual per Kategori Bulanan" width="45%"/>
+</p>  
+
+**Deskripsi:**  
+- 
+
+
 **D. Jika usia dikelompokkan (Remaja, Dewasa, Orang Tua) kelompok mana yang paling banyak bertransaksi? Produk apa yang paling dominan dibeli tiap kelompok usia? Kelompok mana yang dominan ngeluarin banyak uang?**
 **E. Apakah 20% transaksi menyumbang 80% revenue?**
 ### 4. **Insight & Finding**
