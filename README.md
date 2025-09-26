@@ -176,10 +176,30 @@ Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beb
 </p>  
 
 **Deskripsi:**  
-- 
+- Dari sisi jumlah transaksi, wanita melakukan lebih banyak transaksi (510 transaksi) dibandingkan pria (490 transaksi).
+- Clothing mendominasi transaksi pada kedua gender. Perbedaan keduanya adalah wanita cenderung memiliki pola pembelian yang lebih seimbang antara clothing (174), electronics (170), dan beauty (166) yang menunjukkan variasi kebutuhan yang lebih luas. Sedangkan, pria lebih dominan membeli clothing (177) dibanding kategori lain, walau electronics (172) juga cukup tinggi. Ini mengindikasikan pria lebih fokus pada kebutuhan praktis, dengan tambahan pembelian barang elektronik.
+- Dari sisi pengeluaran, baik pria maupun wanita punya distribusi pengeluaran yang hampir mirip. Artinya, total belanja mereka tidak jauh berbeda. Akan tetapi, secara median wanita cenderung mengeluarkan lebih banyak uang per transaksi dibanding pria
+
+**Insight:**  
+- Dari data, jumlah transaksi wanita (510) sedikit lebih tinggi daripada pria (490). Artinya, wanita cenderung lebih aktif dalam melakukan pembelian, meskipun selisih keduanya tidak terlalu besar.
+- Transaksi pria ataupun wanita sama-sama didominasi oleh transaksi clothing (pria 177, wanita 174). Karena jumlahnya paling dominan di kedua gender, clothing bisa dianggap sebagai kebutuhan dasar yang dibeli semua orang, bukan spesifik hanya salah satu gender.
+- Boxplot menunjukkan median pengeluaran wanita lebih besar dibandingkan pria. Hal ini logis karena wanita juga cukup banyak membeli produk beauty (166 transaksi vs pria 141), sementara produk beauty cenderung punya harga rata-rata lebih mahal per item dibandingkan dengan produk lain.
+- Meskipun wanita lebih aktif dalam bertransaksi dan median pengeluarannya sedikit lebih tinggi, pria juga cukup banyak membeli produk electronics yang memiliki harga cukup tinggi per item sehingga strategi pemasaran sebaiknya diarahkan ke keduanya dengan penekanan yang berbeda.
+
+**D. Jika usia dikelompokkan (Remaja, Dewasa, Orang Tua) kelompok mana yang paling banyak bertransaksi? Produk apa yang paling dominan dibeli tiap kelompok usia? Kelompok mana yang dominan ngeluarin banyak uang?**  
+**Tujuan:** Memahami perbedaan perilaku belanja berdasarkan kelompok usia yang hasilnya bisa digunakan untuk menyusun strategi pemasaran yang lebih tepat sasaran sesuai dengan karakteristik konsumen.  
+<p align="center">
+  <img src="https://drive.google.com/uc?export=view&id=1iU4av95lfXOYXft3XQsB1euAfR-eUofN" alt="Frekuensi Transaksi vs Pendapatan Bulanan" width="45%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1jZ3SIrljEfAf5uZG0WpcTXyE5HZbtP-q" alt="Produk Terjual per Kategori Bulanan" width="45%"/>
+</p> 
 
 
-**D. Jika usia dikelompokkan (Remaja, Dewasa, Orang Tua) kelompok mana yang paling banyak bertransaksi? Produk apa yang paling dominan dibeli tiap kelompok usia? Kelompok mana yang dominan ngeluarin banyak uang?**
+
+
+
+
+
+
 **E. Apakah 20% transaksi menyumbang 80% revenue?**
 ### 4. **Insight & Finding**
 ## Kesimpulan
