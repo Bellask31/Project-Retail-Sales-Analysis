@@ -146,9 +146,7 @@ Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beb
 - Beauty: kuantitas paling rendah (771 unit) dengan revenue 143.515 → rata-rata harga per unit 186,14.  
 
 **Insight:**
-- Dari sisi volume penjualan, clothing merupakan produk yang paling diminati konsumen terlebih karena rata-rata harga per unitnya paling kecil diantara dua item lainnya.
-- Akan tetapi, dari segi kontribusi pemasukan, elektronics unggul tipis meskipun jumlah unit yang terjual lebih sedikit dibandingkan dengan clothing. Ini menunjukkan bahwa harga rata-rata per unit elektronics lebih tinggi dan lebih menguntungkan dibandingkan dengan clothing.
-- Item beauty berada di posisi berbeda karena jumlah penjualan paling sedikit dan total revenue terendah. Meskipun demikian, rata-rata harga per unitnya justru paling tinggi. Hal ini mengindikasikan bahwa meski produk Beauty belum populer secara kuantitas, margin keuntungan per unitnya berpotensi lebih besar.
+- Clothing menjadi volume driver karena paling laku dari sisi kuantitas, Electronics berperan sebagai revenue driver karena menyumbang pendapatan terbesar meski kuantitasnya lebih sedikit, sedangkan Beauty menjadi margin driver karena memiliki harga rata-rata per unit yang lebih tinggi meski total transaksinya lebih kecil.  
 
 **B. Bagaimana transaksi tiap bulannya? Apakah ada pola tertentu, seperti saat liburan?**  
 **Tujuan:** Menganalisis grafik frekuensi transaksi dan total revenue, untuk mendeteksi adanya pola musiman.  
@@ -186,21 +184,40 @@ Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beb
 - Boxplot menunjukkan median pengeluaran wanita lebih besar dibandingkan pria. Hal ini logis karena wanita juga cukup banyak membeli produk beauty (166 transaksi vs pria 141), sementara produk beauty cenderung punya harga rata-rata lebih mahal per item dibandingkan dengan produk lain.
 - Meskipun wanita lebih aktif dalam bertransaksi dan median pengeluarannya sedikit lebih tinggi, pria juga cukup banyak membeli produk electronics yang memiliki harga cukup tinggi per item sehingga strategi pemasaran sebaiknya diarahkan ke keduanya dengan penekanan yang berbeda.
 
-**D. Jika usia dikelompokkan (Remaja, Dewasa, Orang Tua) kelompok mana yang paling banyak bertransaksi? Produk apa yang paling dominan dibeli tiap kelompok usia? Kelompok mana yang dominan ngeluarin banyak uang?**  
+**D. Jika usia dikelompokkan (Remaja, Dewasa, Orang Tua) kelompok mana yang paling banyak bertransaksi? Produk apa yang paling dominan dibeli tiap kelompok usia? Kelompok mana yang dominan mengeluarkan banyak uang?**  
 **Tujuan:** Memahami perbedaan perilaku belanja berdasarkan kelompok usia yang hasilnya bisa digunakan untuk menyusun strategi pemasaran yang lebih tepat sasaran sesuai dengan karakteristik konsumen.  
 <p align="center">
-  <img src="https://drive.google.com/uc?export=view&id=1iU4av95lfXOYXft3XQsB1euAfR-eUofN" alt="Frekuensi Transaksi vs Pendapatan Bulanan" width="45%"/>
-  <img src="https://drive.google.com/uc?export=view&id=1jZ3SIrljEfAf5uZG0WpcTXyE5HZbtP-q" alt="Produk Terjual per Kategori Bulanan" width="45%"/>
-</p> 
+  <img src="https://drive.google.com/uc?export=view&id=1ZyofETllcLN0Z9r-n2Ov8EYvtwqAoX4p" alt="Frekuensi Transaksi vs Pendapatan Bulanan" width="45%"/>
+  <img src="https://drive.google.com/uc?export=view&id=1-AVVhs9_iA1jiobwpLWB_7EGBiMe6YWT" alt="Produk Terjual per Kategori Bulanan" width="45%"/>
+</p>  
+
+**Deskripsi:**  
+- Kelompok lansia (424)  dan juga dewasa (407) yang terlihat paling banyak melakukan transaksi, sedangkan remaja jauh lebih sedikit (169).
+- Produk dominan yang dibeli lansia dan orang dewasa adalah clothing, lalu electronics, dan yang paling sedikit adalah beauty. Sedangkan, remaja cenderung memiliki pembelian produk yang seimbang antara beauty, clothing, dan electronics, meskipun beauty sedikit lebih tinggi.
+- Dari boxplot, remaja dan dewasa memiliki distribusi pengeluaran yang lebih besar dibandingkan lansia. Pengeluaran remaja bahkan terlihat memiliki median yang lebih tinggi dibandingkan dengan dua kelompok lainnya. Lansia cenderung lebih rendah baik median maupun sebarannya.  
+
+**Insight:**  
+- Kelompok dewasa merupakan kelompok yang paling aktif berbelanja dan menyumbang volume transaksi terbesar, terutama di clothing. Hal ini logis karena kelompok dewasa memiliki daya beli yang stabil dan kebutuhan fashion yang tinggi (kerja, gaya hidup, dan acara sosial).
+- Remaja memiliki daya beli yang besar meskipun jumlah transaksinya paling sedikit dibandingkan dua kelompok lainnya. Meskipun mereka jarang berbelanja, sekalinya berbelanja mereka cenderung mengeluarkan lebih banyak uang. Hal ini bisa disebabkan faktor tren, keinginan gaya hidup, atau pembelian barang bernilai tinggi (contohnya : beauty).
+- Lansia tetap aktif meskipun mereka cenderung hemat. Jumlah transaksi lansia paling tinggi, namun nominal pengeluarannya lebih rendah. Lansia mungkin lebih sering membeli kebutuhan rutin dalam nominal kecil.
+- Clothing menjadi produk lintas usia karena clothing yang paling mendominasi transaksi ketiga kelompok yang menunjukkan pakaian merupakan kebutuhan universal. Beauty lebih menonjol di kelompok remaja, sedangkan electronics terbagi relatif merata di semua kelompok.
 
 
+**E. Apakah 20% transaksi menyumbang 80% revenue?**  
+**Tujuan:** Mengetahui apakah sebagian kecil transaksi justru menghasilkan sebagian besar pendapatan.
+![Pareto chart](https://drive.google.com/uc?id=1nAsstjnOlbElJXpD80fMwm1MjXX72m6T)  
+**Deskripsi:**  
+- Grafik menunjukkan bahwa 20% transaksi pertama belum mencapai 80% revenue. Revenue kumulatif pada 20% transaksi hanya hanya sekitar ~60%-70% dari total pendapatan yang berarti pola 80/20 (pareto principle) tidak berlaku sempurna pada data ini.
 
+**Insight:**  
+- Prinsip pareto tidak berlaku di data tersebut, 20% transaksi hanya menyumbang 60%-70% revenue sehingga distribusi revenue lebih merata. Artinya, tidak hanya sedikit transaksi besar yang mendominasi, namun banyak transaksi kecil yang juga berperan penting dalam pendapatan total.  
 
+### 4. **Recommendation**
+- Strategi produk : Dikarenakan clothing menjadi volume driver, electronics sebagai revenue driver, dan beauty sebagai margin driver, perusahaan sebaiknya menjaga keberlanjutan stok clothing untuk menjaga traffic, memperkuat promosi electronics karena kontribusi pendapatannya cukup besar, serta menempatkan beauty sebagai produk premium dengan strategi bundling atau upselling agar margin tetap tinggi meski kuantitasnya lebih kecil.
+- Pola bulanan : Jika terdapat lonjakan transaksi di bulan tertentu (misalnya liburan, akhir tahun, atau momen diskon besar), perusahaan bisa memanfaatkan pola musiman dengan menyiapkan stok lebih banyak, memberikan diskon bundling, dan meningkatkan iklan digital menjelang periode puncak agar revenue makin optimal.
+- Segmentasi gender : Wanita menunjukkan perilaku belanja yang lebih merata di semua kategori (Clothing, Beauty, Electronics), sehingga strategi promosi sebaiknya tidak hanya fokus pada Beauty saja. Beauty memang bisa tetap diarahkan secara agresif ke wanita karena kontribusinya dominan dari sisi gender, tetapi Clothing juga perlu didorong dengan kampanye fashion dan tren musiman, sedangkan Electronics bisa diposisikan sebagai bagian dari gaya hidup modern wanita. Untuk pria, Clothing masih menjadi pintu utama karena volume pembeliannya tinggi, namun peluang cross-selling ke Electronics juga besar. Dengan kata lain, wanita adalah segmen “triple potential” yang harus disentuh dengan strategi holistik, sedangkan pria bisa difokuskan ke kategori dominan sambil perlahan diarahkan ke produk bernilai lebih tinggi.
+- Segmentasi usia : dengan dewasa dan lansia sebagai kelompok transaksi terbesar, fokus pemasaran perlu diarahkan pada kebutuhan dan preferensi mereka, terutama untuk clothing dan electronics. Sementara itu, strategi khusus untuk remaja dapat diarahkan pada promosi beauty dan electronics, sekaligus memanfaatkan fakta bahwa mereka memiliki median pengeluaran tertinggi meskipun jumlah transaksinya lebih kecil.
+- Manajemen kontribusi transaksi : Analisis menunjukkan 20% transaksi tidak menyumbang 80% revenue, sehingga pola Pareto klasik tidak berlaku di sini. Artinya, pendapatan perusahaan tidak hanya bergantung pada segelintir high-value customers, tetapi juga ditopang oleh volume transaksi massal dari pelanggan reguler. Karena itu, strategi bisnis perlu seimbang: tetap melakukan retensi untuk pelanggan bernilai besar, namun jangan abai terhadap engagement pelanggan rutin yang jumlahnya besar. Program loyalitas, diskon berkala, atau bundling produk bisa menjaga keberlanjutan transaksi massal ini, sehingga revenue tetap stabil sekaligus membuka peluang kenaikan jangka panjang.
 
-
-
-
-**E. Apakah 20% transaksi menyumbang 80% revenue?**
-### 4. **Insight & Finding**
 ## Kesimpulan
-
+Hasil analisis menunjukkan bahwa pendapatan perusahaan ditopang oleh kombinasi volume (clothing), nilai per unit (beauty), dan total revenue (electronics). Pola transaksi bulanan dipengaruhi jenis produk yang laku, bukan sekadar jumlah transaksi. Preferensi konsumen juga bervariasi menurut gender dan usia, sehingga strategi pemasaran perlu menyesuaikan segmen. Karena revenue tidak terpusat hanya pada 20% transaksi, menjaga volume transaksi massal sama pentingnya dengan merawat pelanggan bernilai tinggi. Perusahaan perlu strategi seimbang untuk menguatkan kinerja dan mendorong pertumbuhan berkelanjutan.
