@@ -83,12 +83,14 @@ HAVING jumlah > 1;
 
 ### 2. **Exploratory Data Analysis (SQL)**
 Exploratory Data Analysis (EDA) menggunakan SQL berfokus pada statistika deskriptif untuk memahami karakteristik awal dataset. Tujuannya adalah mendapatkan gambaran umum tentang data sebelum dilakukan analisis lanjutan atau visualisasi.
+
 **A. Analisis Waktu Transaksi**
 ```
 SELECT min(Transaction_Date) AS Min_Transaksi, max(Transaction_Date) AS Max_Transaksi
 FROM retail_sales_dataset;
 ```
 **Hasil :** Dataset mencakup transaksi mulai dari tanggal terendah (Min) hingga tanggal tertinggi (Max), sehingga kita tahu periode transaksi dari data yang dimiliki. Transaksi pertama pada data adalah 01/01/2023 dan transaksi terakhir pada data adalah 01/01/2024.
+
 **B. Analisis Kolom Numerik**
 ```
 SELECT
@@ -113,6 +115,7 @@ SELECT
 FROM retail_sales_dataset;
 ```
 **Hasil :** Tabel ini merangkum jumlah data, rata-rata, nilai minimum & maksimum, serta ukuran sebaran (standar deviasi, variansi) dari setiap kolom numerik.
+
 **C. Analisis Kolom Kategorik**
 - **Gender**
 ```
@@ -134,6 +137,7 @@ FROM retail_sales_dataset
 GROUP BY Product_Category;
 ```
 **Hasil:** Menunjukkan kategori produk mana yang paling banyak berkontribusi dalam penjualan. Produk clothing memiliki jumlah transaksi paling banyak yang diikuti oleh electronics dan beauty. 
+
 ### 3. **Exploratory Data Analysis (Python)**
 Pada tahap ini, analisis dilakukan menggunakan Python dengan tujuan menjawab beberapa pertanyaan utama melalui visualisasi data. Berikut adalah link coding with Python : 
 
