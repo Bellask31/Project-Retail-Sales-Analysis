@@ -4,7 +4,7 @@ Proyek ini bertujuan untuk menganalisis data penjualan retail menggunakan kombin
 - Sumber : Retail Sales Dataset (https://www.kaggle.com/datasets/mohammadtalib786/retail-sales-dataset?)
 - Jumlah data : 1.000 entri
 - Variabel utama : Transaction_ID, Transaction_Date, Customer_ID, Gender, Age, Product_Category, Quantity, Price_perUnit, Total_Amount
-## Tools & Teknologi
+## Tools & Tech
 - **SQL** : Querying, Agregasi (COUNT,AVG,MIN,MAX, dll + GROUP BY), Advanced Aggregation (Union All), Subquery, Data Cleaning & Preparation.
 - **Python** : Pandas, Matplotlib, Seaborn
 ## Workflow Proyek
